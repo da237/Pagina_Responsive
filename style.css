@@ -1,3 +1,5 @@
+/* Configuracion inicial */
+
 :root{
     --primry-color:#4f4aa6;
     --secondary-color:#48ca95;
@@ -30,6 +32,8 @@
     font-family:Poppins-extrabold;
     src: url(/assets/fonts/Poppins-ExtraBold.ttf);
 }
+
+/* HEADER */
 
 header {
     background-image: url(assets/images/banner.jpg);
@@ -117,6 +121,7 @@ nav ul li a:hover {
     display: none;
 }
 
+/* MEDIAQUERY HEADER */
 @media (max-width:800px){
     .menu-mobile{
         display: flex;
@@ -143,9 +148,9 @@ nav ul li a:hover {
     .header-content-text p {
         font-size: 14px;
     }
-    /* .btn {
-        margin: 10px 30px;
-    } */
+    .btn {
+        padding: 10px 30px;
+    }
     .header-img{
         margin: 50px 10px;
         width: 95%;
@@ -154,5 +159,36 @@ nav ul li a:hover {
     }
 }
 
+/* BODY */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px;
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.card h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    text-align: center;
+}
 
 
